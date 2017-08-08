@@ -6,11 +6,12 @@ function zhiyinshu(n) {
         if (n == i) {
             result+=i;
             flag = 0;
-        }
+        } 
         else if (n % i == 0) {
             result+=i;
             n = n / i;
-        } else {
+        } 
+        else {
             i = i + 1;
         }
     }
