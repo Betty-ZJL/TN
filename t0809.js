@@ -5,6 +5,7 @@ function fbo(n) {
     let list = [0, 1];
     for (let i = 2; i < n; i++)
         list.push(list[i - 1] + list[i - 2]);
+    if (n == 1) list = [0];
     console.log(`斐波纳契数列的前 ${n} 个数字是：${list}`);
     console.log(`斐波纳契数列中第 ${n} 个数是：${list[n - 1]}\n`);
 }
@@ -21,6 +22,8 @@ function fbo2(n) {
         a = b;
         b = c;
     }
+    if (n == 1) c = a;
+    if (n == 2) c = b;
     console.log(`斐波纳契数列中第 ${n} 个数是：${c}`);
 }
 
