@@ -12,5 +12,18 @@ function shuixianhua() {
     }
 }
 
+
+function shuixianhua2() {
+    for (let i = 100; i <= 999; i++) {
+        a = parseInt(i / 100);
+        b = parseInt(i / 10 - a * 10);
+        c = i - (a * 100 + b * 10);
+        if (i == a * a * a + b * b * b + c * c * c)
+            console.log(i);
+    }
+}
+
 //test
 shuixianhua();
+console.log('\n')
+shuixianhua2();
