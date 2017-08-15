@@ -5,10 +5,11 @@
  */
 
 function count(arr, item) {
-    return arr.filter(function (i) {
+    let n = arr.filter(function (i) {
         return i === item
     }).length;
+    console.log(`[${arr}]中${item}出现的次数为：${n}`);
 }
 
 //test
-console.log(count([1, 3, 7, 1, 4,], 1));
+count([1, 3, 7, 1, 4,], 1);
