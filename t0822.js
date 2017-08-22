@@ -16,7 +16,7 @@ function find(num1, num2) {
             }
         }
     }
-    console.log(`[${num1}]和[${num2}]的交数组为：`);
+    console.log(`\n[${num1}]和[${num2}]的交数组为：`);
     let maxLengthIndex = 0;
     result.forEach(function (value, index) {
         if (value.length > result[maxLengthIndex])
@@ -25,7 +25,7 @@ function find(num1, num2) {
     console.log(`[${result[maxLengthIndex].split('')}]`);
     result.forEach(function (item) {
         if (item.length > 1 && (!result.includes(item)))
-            console.log(`[${result[maxLengthIndex].split('')}]`);
+            console.log(`[${item.split('')}]`);
     });
 }
 
