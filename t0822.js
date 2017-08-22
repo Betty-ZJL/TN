@@ -14,9 +14,6 @@ function find(num1, num2) {
                 result[i].push(num1[n]);
                 n++;
             }
-            else {
-                break;
-            }
         }
     }
     console.log(`[${num1}]和[${num2}]的交数组为：`)
